@@ -1,0 +1,24 @@
+.outer label{
+	position: relative;
+	width: 250px;
+	height: 40px;
+	border: 1px solid #000;
+	overflow: hidden;
+	cursor: pointer;
+}
+label input{
+	display: none;
+	position: absolute;
+	width: 250px;
+	height: 40px;
+}
+span{
+	position: absolute;
+	width: 250px;
+	height: 40px;
+}
+input:checked + span{
+	background-color: #000;
+	color:#fff;
+	transition: 0.5s all;
+}
